@@ -11,6 +11,7 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v2
+
       - name: Set up JDK 16
         with:
           java-version: '16'
@@ -22,7 +23,6 @@ jobs:
         run: gradle build
 
       - uses: marvinpinto/action-automatic-releases@latest
-      - name: Publish to JitPack
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: latest
