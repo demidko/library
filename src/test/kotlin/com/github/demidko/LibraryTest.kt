@@ -1,4 +1,4 @@
-package ml.demidko.template
+package com.github.demidko
 
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo

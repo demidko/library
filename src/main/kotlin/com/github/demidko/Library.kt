@@ -1,4 +1,4 @@
-package ml.demidko.template
+package com.github.demidko
 
 class Library {
   fun someLibraryMethod(): Boolean {
