@@ -19,7 +19,7 @@ also [Gradle documentation](https://docs.gradle.org/current/samples/sample_build
 
 ## Deploy
 
-Add jar to GitHub releases. Tell the world where to get your library, for example:
+Create GitHub release with source code. Then, tell the world where to get your library, for example:
 
 ```kotlin
 repositories {
