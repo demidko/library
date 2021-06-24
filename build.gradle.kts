@@ -26,3 +26,10 @@ tasks.compileTestKotlin {
 tasks.test {
   useJUnitPlatform()
 }
+publishing {
+  publications {
+    create<MavenPublication>("jar") {
+      from(components["java"])
+    }
+  }
+}
