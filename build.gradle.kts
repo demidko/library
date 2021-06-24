@@ -26,3 +26,11 @@ tasks.compileTestKotlin {
 tasks.test {
   useJUnitPlatform()
 }
+publishing {
+  publications {
+    create<MavenPublication>("library") {
+      groupId = "com.github"
+      from(components["java"])
+    }
+  }
+}
