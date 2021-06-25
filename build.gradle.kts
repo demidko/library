@@ -29,7 +29,7 @@ tasks.test {
 publishing {
   publications {
     create<MavenPublication>("library") {
-      groupId = "com.github"
+      groupId = "com.github.demidko"
       from(components["java"])
     }
   }
