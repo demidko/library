@@ -1,4 +1,4 @@
-package com.github.demidko
+package com.github.demidko.library
 
 class Library {
   fun someLibraryMethod(): Boolean {

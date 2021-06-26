@@ -23,7 +23,6 @@ Create GitHub release with source code. Then, tell the world where to get your l
 
 ```kotlin
 repositories {
-    jcenter()
     maven("https://jitpack.io")
 }
 dependencies {
