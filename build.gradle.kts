@@ -8,12 +8,14 @@ plugins {
   kotlin("jvm") version "1.5.20"
 }
 dependencies {
-  // This dependency is exported to consumers, that is to say found on their compile classpath.
+  // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
   api("org.apache.commons:commons-math3:3.6.1")
+  // "implementation" dependencies is private for your library
+  implementation("ch.qos.logback:logback-classic:1.2.6")
 
   testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
-  testImplementation("com.natpryce:hamkrest:1.8.0.1")
-  testImplementation("io.mockk:mockk:1.11.0")
+  testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
+  testImplementation("io.mockk:mockk:1.12.0")
 }
 tasks.compileKotlin {
   kotlinOptions.jvmTarget = "16"

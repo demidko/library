@@ -19,7 +19,7 @@ also [Gradle documentation](https://docs.gradle.org/current/samples/sample_build
 
 ## Deploy
 
-Create GitHub release with source code. Then, tell the world where to get your library, for example:
+Create GitHub release with source code. Then, tell the world where to get your library:
 
 ```kotlin
 repositories {
@@ -30,7 +30,8 @@ dependencies {
 }
 ```
 
-See also [JitPack documentation](https://jitpack.io/docs/#publishing-on-jitpack).
+It will be available for all consumers automatically. See
+also [JitPack documentation](https://jitpack.io/docs/#publishing-on-jitpack).
 
 
 
