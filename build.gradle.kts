@@ -13,8 +13,8 @@ dependencies {
   // "implementation" dependencies is private for your library
   implementation("ch.qos.logback:logback-classic:1.2.6")
 
-  testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
-  testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.0")
+  testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
   testImplementation("io.mockk:mockk:1.12.0")
 }
 tasks.compileKotlin {
