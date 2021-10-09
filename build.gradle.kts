@@ -5,7 +5,7 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "1.5.30"
+  kotlin("jvm") version "1.5.31"
 }
 dependencies {
   // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
@@ -13,7 +13,7 @@ dependencies {
   // "implementation" dependencies is private for your library
   implementation("ch.qos.logback:logback-classic:1.2.6")
 
-  testImplementation("org.junit.jupiter:junit-jupiter:5.8.0")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
   testImplementation("io.mockk:mockk:1.12.0")
 }
