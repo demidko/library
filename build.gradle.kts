@@ -5,7 +5,7 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "1.6.0-RC"
+  kotlin("jvm") version "1.6.0-RC2"
 }
 dependencies {
   // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
