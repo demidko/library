@@ -5,24 +5,25 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "1.6.20-M1"
+  kotlin("jvm") version "1.7.0"
 }
 dependencies {
-  // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
-  api("org.apache.commons:commons-math3:3.6.1")
+  // "api" dependencies is exported to consumers, that is to say found on their compile classpath. 
+  // For example, api("org.apache.commons:commons-math3:3.6.1")
   // "implementation" dependencies is private for your library
-  implementation("ch.qos.logback:logback-classic:1.2.7")
-
-  testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+  // For example, implementation("org.apache.commons:commons-math3:3.6.1")
+  
+  implementation("ch.qos.logback:logback-classic:1.2.11")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
-  testImplementation("io.mockk:mockk:1.12.0")
+  testImplementation("io.mockk:mockk:1.12.4")
 }
 tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "17"
+  kotlinOptions.jvmTarget = "18"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
 }
 tasks.compileTestKotlin {
-  kotlinOptions.jvmTarget = "17"
+  kotlinOptions.jvmTarget = "18"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
 }
 tasks.test {
