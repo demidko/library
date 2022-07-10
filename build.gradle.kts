@@ -17,11 +17,11 @@ dependencies {
   testImplementation("io.mockk:mockk:1.12.4")
 }
 tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "8"
+  kotlinOptions.jvmTarget = "11"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
 }
 tasks.compileTestKotlin {
-  kotlinOptions.jvmTarget = "8"
+  kotlinOptions.jvmTarget = "11"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
 }
 tasks.test {
