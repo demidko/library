@@ -1,7 +1,6 @@
 package com.github.demidko.library
 
-import assertk.assertThat
-import assertk.assertions.isTrue
+import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Test
 
 class LibraryTest {
