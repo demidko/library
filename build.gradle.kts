@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 repositories {
   mavenCentral()
   maven("https://jitpack.io")
@@ -16,11 +18,7 @@ dependencies {
   testImplementation("com.google.truth:truth:1.1.3")
   testImplementation("io.mockk:mockk:1.13.2")
 }
-tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "11"
-  kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
-}
-tasks.compileTestKotlin {
+tasks.withType<KotlinCompile> {
   kotlinOptions.jvmTarget = "11"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
 }
