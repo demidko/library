@@ -7,7 +7,7 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "1.7.22"
+  kotlin("jvm") version "1.8.10"
 }
 dependencies {
   // "api" dependencies is exported to consumers, that is to say found on their compile classpath. 
@@ -21,6 +21,10 @@ dependencies {
 tasks.withType<KotlinCompile> {
   kotlinOptions.jvmTarget = "11"
   kotlinOptions.freeCompilerArgs += "-opt-in=kotlin.time.ExperimentalTime"
+}
+tasks.withType<JavaCompile> {
+  sourceCompatibility = "11"
+  targetCompatibility = "11"
 }
 tasks.test {
   useJUnitPlatform()
