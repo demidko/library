@@ -1,5 +1,5 @@
-import org.gradle.api.JavaVersion.VERSION_11
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+import org.gradle.api.JavaVersion.VERSION_21
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 
 repositories {
   mavenCentral()
@@ -8,7 +8,7 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "2.1.20-Beta2"
+  kotlin("jvm") version "2.2.20"
 }
 dependencies {
   // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
@@ -21,13 +21,12 @@ dependencies {
 }
 kotlin {
   compilerOptions {
-    jvmTarget = JVM_11
-    optIn.add("kotlin.time.ExperimentalTime")
+    jvmTarget = JVM_21
   }
 }
 java {
-  sourceCompatibility = VERSION_11
-  targetCompatibility = VERSION_11
+  sourceCompatibility = VERSION_21
+  targetCompatibility = VERSION_21
 }
 tasks.test {
   useJUnitPlatform()
