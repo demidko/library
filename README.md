@@ -1,6 +1,6 @@
 # Library
 
-Java library template written in the Kotlin language. JDK 11+ supported.  
+Java library template written in the Kotlin language. JDK 21+ supported.  
 **The following is not a real usage guide. It is simply a template for inserting information about your library.**
 
 ## Download
